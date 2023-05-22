@@ -1,0 +1,27 @@
+.restaurant_heart
+    position: relative
+    height: 24px
+    cursor: pointer
+    &--empty
+        opacity: 1
+        transition: opacity 500ms ease-in-out
+    &:hover
+        .restaurant_heart--empty
+            opacity: 0
+            transition: opacity 500ms ease-in-out
+        
+        .restaurant_heart--filled
+            opacity: 1
+            transition: opacity 500ms ease-in-out
+    &--filled
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: $color_btn
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        opacity: 0
+        transition: opacity 500ms ease-in-out
+        

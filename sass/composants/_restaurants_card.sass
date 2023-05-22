@@ -1,0 +1,34 @@
+.restaurants
+    &_card 
+        background-color: white
+        border-radius: 1rem
+        opacity: 0
+        animation: hero_anim 300ms forwards        
+    img
+        height: 10rem
+        border-top-left-radius: 1rem
+        border-top-right-radius: 1rem
+    &_details
+        padding: 0.8rem
+        justify-content: space-between
+        h3
+            margin-bottom: 0.4rem
+        i
+            font-size: 1.5rem
+    a
+        position: relative
+        height: 100%
+        display: block
+    .nouveau
+        position: absolute
+        background-color: $color_2
+        color: $color_3
+        right: 1rem
+        top: 1rem
+        border-radius: 2px
+        padding: 0.5rem 0.7rem
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+
+@for $x from 1 through 4
+    .restaurants_card:nth-child(#{$x})
+        animation-delay: calc( (300ms * $x) + 4400ms )

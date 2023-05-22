@@ -1,0 +1,30 @@
+.restaurant
+    .article_1
+        @for $i from 1 to 9
+            .restaurant_item:nth-child(#{$i})
+                animation: item-anim 300ms
+                animation-delay: 200ms * $i
+                animation-fill-mode: both
+    .article_2
+        @for $i from 1 to 9
+            .restaurant_item:nth-child(#{$i})
+                animation: item-anim 300ms
+                animation-delay: 200ms * $i + 600ms
+                animation-fill-mode: both
+    .article_3
+        @for $i from 1 to 9
+            .restaurant_item:nth-child(#{$i})
+                animation: item-anim 300ms
+                animation-delay: 200ms * $i + 1200ms
+                animation-fill-mode: both
+
+@keyframes item-anim 
+    0% 
+        opacity: 0
+        transform: scale(2, 0.5) translateX(300vw)
+    75%
+        opacity: 1
+        transform: scale(0.7, 1.3) translateX(-50%)
+    100%
+        opacity: 1
+        transform: scale(1) translateX(0)

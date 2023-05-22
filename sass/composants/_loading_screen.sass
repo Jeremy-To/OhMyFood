@@ -1,0 +1,38 @@
+.loading
+    &_screen
+        opacity: 1
+        position: absolute
+        width: 100%
+        display: flex
+        justify-content: center
+        top: 0
+        animation: loading_timeout 3100ms
+        animation-fill-mode: forwards
+    &_logo
+        width: 162px
+        margin: auto
+        transform: scale(3.5) translateY(260%) 
+        &--O-1
+            transform: translateX(50px)
+            animation: jump-1 300ms 200ms, jump-1 300ms 1000ms,jump-1 300ms 1600ms, reposition-1 400ms 2000ms forwards
+        &--H
+            opacity: 0
+            animation: opacity_anim 150ms 2400ms forwards
+        &--M
+            opacity: 0
+            animation: opacity_anim 150ms 2500ms forwards
+        &--Y
+            opacity: 0
+            animation: opacity_anim 150ms 2600ms forwards
+        &--F
+            opacity: 0
+            animation: opacity_anim 150ms 2700ms forwards
+        &--O-2
+            transform: translateX(-45px)
+            animation: jump-2 300ms 300ms, jump-2 300ms 1100ms,jump-2 300ms 1700ms, reposition-2 400ms 2000ms forwards
+        &--O-3
+            transform: translateX(-40px)
+            animation: jump-3 300ms 450ms, jump-3 300ms 1300ms,jump-3 300ms 1800ms, reposition-3 400ms 2000ms forwards
+        &--D
+            opacity: 0
+            animation: opacity_anim 150ms 2900ms forwards

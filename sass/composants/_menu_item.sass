@@ -1,0 +1,65 @@
+.restaurant
+    &_item
+        z-index: 1
+        display: flex
+        background-color: white
+        border-radius: 1rem
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1)
+        overflow-x: hidden
+        position: relative
+        margin: 0 auto 0.7rem
+        cursor: pointer
+        min-width: 0
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+        h3
+            min-width: 0
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+        p
+            font-size: 0.9rem
+            min-width: 0
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+        i
+            color: white
+            font-size: 22px
+            opacity: 0
+            transform: rotate(180deg)
+            transition: all 500ms ease-in
+        &_details
+            padding: 0.7rem
+            width: 100%
+            padding-right: 3rem
+            transition: all 400ms
+        span
+            position: absolute
+            bottom: 0.7rem
+            right: 1rem
+            transform: translateX(0px)
+            transition: all 500ms ease-out
+        &:hover
+            .restaurant_item_details
+                width: 70%
+            .pop-out
+                transform: translateX(0px)
+            span
+                transform: translateX(-50px)
+            i
+                opacity: 1
+                transform: rotate(0deg)      
+    .pop-out
+        width: 60px
+        background-color: $color_2
+        display: flex
+        justify-content: center
+        align-items: center
+        transform: translateX(60px)
+        transition: all 600ms ease-out
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
