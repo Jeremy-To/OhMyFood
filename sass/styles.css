@@ -111,9 +111,8 @@ h3 {
   animation-name: fonctionnement_anim;
   animation-fill-mode: forwards;
 }
-.fonctionnement_fig:hover {
-  background-color: #ff79da;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+.fonctionnement_fig:hover i {
+  color: #9356DC;
 }
 .fonctionnement_fig span {
   position: absolute;
