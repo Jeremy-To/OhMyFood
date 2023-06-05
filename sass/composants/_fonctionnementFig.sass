@@ -13,8 +13,11 @@
     border-radius: 1rem
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
     animation-duration: 400ms
-    animation-name: fonctionnement_anim 
+    animation-name: fonctionnement_anim
     animation-fill-mode: forwards
+    &:hover
+        background-color: #ff79da
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35)
     span
         position: absolute
         left: -0.5rem
@@ -25,13 +28,12 @@
         text-align: center
         border-radius: 50%
 
-@for $a from 1 through 3  
+@for $a from 1 through 3
     .fonctionnement_fig:nth-child(#{$a})
         animation-delay: calc((250ms * $a) + 4300ms)
-    
 
-@keyframes fonctionnement_anim 
-    0% 
+@keyframes fonctionnement_anim
+    0%
         opacity: 0
         transform: scale(2, 0.5) translateY(-300vw)
     75%
